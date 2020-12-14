@@ -13,11 +13,6 @@ export class BooksController {
     constructor (private readonly bookService: BooksService){}
     @Post()
     @Header('content-type','application/jason')
-    @ApiResponse( {
-        status: 201,
-        description: 'Book Created.',
-        type: BaseEntity,
-    })
     create(@Body() createBookDto:CreateBookDto){
         return this.bookService.insert(createBookDto)
     
@@ -30,18 +25,8 @@ export class BooksController {
         return this.bookService.getAllBooks()
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 
 }
+
