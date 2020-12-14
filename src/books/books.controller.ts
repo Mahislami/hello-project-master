@@ -4,7 +4,7 @@ import BookEntity from 'db/book.entity';
 import { application } from 'express';
 import { type } from 'os';
 import { BaseEntity } from 'typeorm';
-import CreateBookDto from 'user/dto/create-book.dto';
+import CreateBookDto from 'src/user/dto/create-book.dto';
 import { BooksService } from './books.service';
 
 @Controller('books')

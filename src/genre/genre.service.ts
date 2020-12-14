@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import CreateGenreDto from 'user/dto/create-genre.dto';
-import GenreEntity from '../db/genre.entity';
+import CreateGenreDto from 'src/user/dto/create-genre.dto';
+import GenreEntity from 'db/genre.entity';
 
 @Injectable()
 export default class GenreServices {
