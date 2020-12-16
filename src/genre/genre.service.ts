@@ -3,7 +3,7 @@ import CreateGenreDto from 'src/user/dto/create-genre.dto';
 import GenreEntity from 'db/genre.entity';
 
 @Injectable()
-export default class GenreServices {
+export default class GenreService {
     async insert(genreDetails: CreateGenreDto): Promise<GenreEntity> {
 
     const genreEntity: GenreEntity = GenreEntity.create();
